@@ -61,6 +61,8 @@ Structuur van het level
 Bovenaan: de kanon waar je kan kiezen waar je de speler eruit wilt schieten
 Midden: veld met balletjes waar je ze moet aanvallen, en de enemies die je probeert te schieten waar je de kogels moet parryen
 Onderaan: opvang of doelgebied waar je gold nodig hebt om naar de volgende level te gaan
+
+
 <img width="623" height="854" alt="image" src="https://github.com/user-attachments/assets/f2c2e65f-5d3e-4667-9aea-fa449f804775" />
 
 
