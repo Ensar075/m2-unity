@@ -75,3 +75,61 @@ Hier hit de bal de target wat er werd gevraagd in de opdracht:
 
 https://github.com/user-attachments/assets/7710b05e-d5fd-4d5f-8b46-eb72f0beb951
 
+dit is de bal code:
+using UnityEngine;
+
+public class ShootBall : MonoBehaviour
+{
+
+
+    
+    public float ShootForce = 500f;
+
+   
+    public Vector3 Direction = new Vector3(0f, 1f, 0f);
+
+    private Rigidbody2D rb;
+
+   
+    void Start()
+    {
+       
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+         
+            rb.AddForce(Direction * ShootForce);
+
+        }
+    }
+
+
+dit is de target code:
+
+using UnityEngine;
+
+public class TargetCollision : MonoBehaviour
+{
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+     
+    
+    }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Hit!");
+    }
+
+
