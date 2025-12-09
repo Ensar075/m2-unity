@@ -60,9 +60,18 @@ Korte omschrijving van thema, kleuren en geluid: de thema is gewoon om ninjas. d
 Structuur van het level
 Bovenaan: de kanon waar je kan kiezen waar je de speler eruit wilt schieten
 Midden: veld met balletjes waar je ze moet aanvallen, en de enemies die je probeert te schieten waar je de kogels moet parryen
+
 Onderaan: opvang of doelgebied waar je gold nodig hebt om naar de volgende level te gaan
 
 
 <img width="623" height="854" alt="image" src="https://github.com/user-attachments/assets/f2c2e65f-5d3e-4667-9aea-fa449f804775" />
 
+
+## Opdracht 2.1 Forces and Collision
+
+Hier hit de bal de target wat er werd gevraagd in de opdracht:
+
+
+
+https://github.com/user-attachments/assets/7710b05e-d5fd-4d5f-8b46-eb72f0beb951
 
