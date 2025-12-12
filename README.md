@@ -133,3 +133,122 @@ public class TargetCollision : MonoBehaviour
     }
 
 
+## Opdracht 2.2: Mikken, Shieten en Line Renderer
+Dit is de video van de opdracht
+
+
+https://github.com/user-attachments/assets/60a5fcb7-ee2e-451b-a07e-c9885303c711
+
+scripts:
+aim.cs:
+using UnityEngine;
+public class Aim : MonoBehaviour
+{
+    void Update()
+    {
+       
+        Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
+       
+        Vector3 dir = Input.mousePosition - pos;
+        
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+       
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+    }
+}
+schoot.cs:
+using UnityEngine;
+
+public class Shoot : MonoBehaviour
+{
+    private void Start()
+    {
+        
+        _line = GetComponent<LineRenderer>();
+       
+        _line.SetPosition(1, Vector3.zero);
+       
+
+    }
+    
+    [SerializeField] private float lineSpeed = 10f;
+   
+    private LineRenderer _line;
+    
+    private bool _lineActive = false;
+  
+  
+    [SerializeField] private GameObject prefab;
+    
+    [SerializeField] private float forceBuild = 20f;
+
+    [SerializeField] private float maximumHoldTime = 5f;
+
+   
+
+   
+    private float _pressTimer = 0f;
+   
+    private float _launchForce = 0f;
+
+    
+    private void Update()
+    {
+        HandleShot();
+        if (Input.GetMouseButtonDown(0))
+        {
+            _pressTimer = 0f;
+            _lineActive = true;
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+
+            
+
+
+            _lineActive = false;
+            _line.SetPosition(1, Vector3.zero);
+        }
+    }
+    
+    private void HandleShot()
+
+    {
+        if (_lineActive)
+        {
+            _line.SetPosition(1, Vector3.right * _pressTimer * lineSpeed);
+        }
+       
+        if (Input.GetMouseButtonDown(0))
+        {
+            _pressTimer = 0; 
+
+        }
+        
+        if (Input.GetMouseButtonUp(0))
+        {
+          
+            _launchForce = _pressTimer * forceBuild;
+
+           
+            
+            transform.parent verwijst naar de scene zodat de bal in de scene beland en niet in je kannon */
+            GameObject ball = Instantiate(prefab, transform.parent);
+
+           
+            ball.transform.rotation = transform.rotation;
+
+           
+            ball.GetComponent<Rigidbody2D>().AddForce(ball.transform.right * _launchForce, ForceMode2D.Impulse);
+
+            
+            ball.transform.position = transform.position;
+        }
+       
+        if (_pressTimer < maximumHoldTime)
+        {
+            
+            _pressTimer += Time.deltaTime;
+        }
+    }
+}
