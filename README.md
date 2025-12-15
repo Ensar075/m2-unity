@@ -252,3 +252,14 @@ public class Shoot : MonoBehaviour
         }
     }
 }
+## Opdracht 3.1 en 3.2
+
+sinds mijn game niet precies het zelfde is als de opdracht, heb ik zelf een score en die stuff gedaan. Ik heb geen scores, ik heb gold in mijn game staan. Je moet de peggles hitten om de gold te kunnen krijgen. sommige peggles hebben meer waard, dus je moet de peggles die meer waarde heeft meerdere keren hitten.
+
+
+
+https://github.com/user-attachments/assets/47ede052-5031-445d-ac44-578dc1313684
+
+
+
+Sinds ik een beetje slecht ben met coderen, ik heb een beetje hulp aan Ai gevraagd, want ik ben een beginner. Heb het gebruikt om ook beetje te leren. Als dat oke is.
