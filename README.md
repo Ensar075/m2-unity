@@ -256,6 +256,50 @@ public class Shoot : MonoBehaviour
 
 sinds mijn game niet precies het zelfde is als de opdracht, heb ik zelf een score en die stuff gedaan. Ik heb geen scores, ik heb gold in mijn game staan. Je moet de peggles hitten om de gold te kunnen krijgen. sommige peggles hebben meer waard, dus je moet de peggles die meer waarde heeft meerdere keren hitten.
 
+## opdracht 4.1 en 4.2
+ik heb ze beide gedaan
+
+
+https://github.com/user-attachments/assets/ec93dab6-6188-4168-a87c-114d55e4ca5d
+
+
+script:
+using UnityEngine;
+using TMPro;
+
+public class GameManager : MonoBehaviour
+{
+    public static GameManager Instance;
+    public int totalGold = 0;
+    public TextMeshProUGUI goldText;
+
+    private void Awake()
+    {
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(gameObject);
+    }
+
+    void Start()
+    {
+        UpdateGoldUI();
+    }
+
+    public void AddGold(int amount)
+    {
+        totalGold += amount;
+        UpdateGoldUI();
+    }
+
+    void UpdateGoldUI()
+    {
+        if (goldText != null)
+            goldText.text = "Gold: " + totalGold;
+    }
+}
+
+ik heb deze script gesleept naar game manager en mn textmeshpro gesleept nr die script.
 
 
 https://github.com/user-attachments/assets/47ede052-5031-445d-ac44-578dc1313684
