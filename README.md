@@ -256,6 +256,15 @@ public class Shoot : MonoBehaviour
 
 sinds mijn game niet precies het zelfde is als de opdracht, heb ik zelf een score en die stuff gedaan. Ik heb geen scores, ik heb gold in mijn game staan. Je moet de peggles hitten om de gold te kunnen krijgen. sommige peggles hebben meer waard, dus je moet de peggles die meer waarde heeft meerdere keren hitten.
 
+
+
+https://github.com/user-attachments/assets/47ede052-5031-445d-ac44-578dc1313684
+
+
+
+Sinds ik een beetje slecht ben met coderen, ik heb een beetje hulp aan Ai gevraagd, want ik ben een beginner. Heb het gebruikt om ook beetje te leren. Als dat oke is.
+
+
 ## opdracht 4.1 en 4.2
 ik heb ze beide gedaan
 
@@ -302,8 +311,11 @@ public class GameManager : MonoBehaviour
 ik heb deze script gesleept naar game manager en mn textmeshpro gesleept nr die script.
 
 
-https://github.com/user-attachments/assets/47ede052-5031-445d-ac44-578dc1313684
+## opracht eind
+ik begreep niet echt de eindopdracht, maar ik wil wel mijn game laten zien
 
 
 
-Sinds ik een beetje slecht ben met coderen, ik heb een beetje hulp aan Ai gevraagd, want ik ben een beginner. Heb het gebruikt om ook beetje te leren. Als dat oke is.
+https://github.com/user-attachments/assets/be4d2281-2944-4d41-b328-24b723789655
+
+Ik vond deze hele project best leuk, alleen vind ik jammer dat ik een beetje heb gewacht op de laatste moment van deze opdracht. Het was niet helemaal uitgekomen hoe ik het wou, maar beter dan niets. ik had beetje eerder moeten beginnen. Maar ja, vond het best leuk. Alleen moet meer werken aan het coderen skills (ik ben er echt slecht in dus moest hulp vragen aan ai voor die om te leren beetje). Oja ik had al deze sprites ZELF gemaakt. En sinds ik veel hou van designen en tekenen was het wel echt leuk om het te doen.
